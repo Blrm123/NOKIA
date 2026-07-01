@@ -55,12 +55,14 @@ coverage.xml
 # Backend runtime data (generated at runtime — not source code)
 # ------------------------------------------------------------
 backend/repositories/
-backend/workflow/
 backend/logs/
 
-# Keep the folder structure but not the runtime files
+# workflow/ contains BOTH source code (.py) and runtime data (.json)
+# Only ignore the generated JSON state files, NOT the Python source files
+backend/workflow/*.json
+
+# Keep the folder structure
 !backend/repositories/.gitkeep
-!backend/workflow/.gitkeep
 !backend/logs/.gitkeep
 
 # ------------------------------------------------------------
