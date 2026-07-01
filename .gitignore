@@ -1,0 +1,104 @@
+# ============================================================
+# NOKIA Project — .gitignore
+# ============================================================
+
+# ------------------------------------------------------------
+# SECRETS — Never commit these
+# ------------------------------------------------------------
+.env
+*.env
+!.env.example
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+
+# pytest cache
+.pytest_cache/
+.cache/
+*.pytest_cache
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# ------------------------------------------------------------
+# Backend runtime data (generated at runtime — not source code)
+# ------------------------------------------------------------
+backend/repositories/
+backend/workflow/
+backend/logs/
+
+# Keep the folder structure but not the runtime files
+!backend/repositories/.gitkeep
+!backend/workflow/.gitkeep
+!backend/logs/.gitkeep
+
+# ------------------------------------------------------------
+# Node.js / Frontend
+# ------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+.next/
+out/
+.nuxt/
+.cache/
+
+# ------------------------------------------------------------
+# IDEs and Editors
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------
+# OS generated files
+# ------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
